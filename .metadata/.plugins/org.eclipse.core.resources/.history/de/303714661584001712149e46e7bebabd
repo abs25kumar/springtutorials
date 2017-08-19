@@ -1,0 +1,9 @@
+package MvcConfig;
+
+public class javaConfig {
+
+	public static void main(String[] args) {
+		MvcConfig.java
+	}
+
+}

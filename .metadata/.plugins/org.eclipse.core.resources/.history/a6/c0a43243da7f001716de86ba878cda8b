@@ -1,0 +1,11 @@
+package com.tutorials;
+
+public class LambaTest {
+	
+	public static void main(String[] args) {
+		LambaTest lt = new LambaTest();
+		lt.greet -> System.out.print("Hello");
+	};
+	}
+
+}

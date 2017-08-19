@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Product.java&apos; to &apos;OrderBackEnd/src/main/java/com.tutorials.order.rest&apos;&#x0A;- Original project: &apos;ProductBackEnd&apos;&#x0A;- Destination element: &apos;OrderBackEnd/src/main/java/com.tutorials.order.rest&apos;&#x0A;- Original element: &apos;com.tutorials.product.rest.Product.java&apos;" description="Copy compilation unit" destination="=OrderBackEnd/src\/main\/java&lt;com.tutorials.order.rest" element1="/src\/main\/java&lt;com.tutorials.product.rest{Product.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1498568869854" units="1" version="1.0"/>
+</session>

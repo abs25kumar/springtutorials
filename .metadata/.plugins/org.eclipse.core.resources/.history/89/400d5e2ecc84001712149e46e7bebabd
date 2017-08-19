@@ -1,0 +1,5 @@
+package com.tutorials.services;
+
+public class BookingService {
+
+}

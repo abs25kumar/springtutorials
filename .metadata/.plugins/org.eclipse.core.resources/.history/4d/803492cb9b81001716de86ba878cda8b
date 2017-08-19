@@ -1,0 +1,28 @@
+package com.tutorials.session2;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+
+public class DrawingApp {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext appContext =
+				new ClassPathXmlApplicationContext("beans.xml");
+		Triangle triangleC =
+				(Triangle) appContext.getBean("triangle-alias");//Step 9
+		
+		//Step 6 - Constructor injection of primitives
+		System.out.println("Demo of constructor arguments");
+		System.out.println(triangleC.getType());
+		System.out.println(triangleC.getHieght());
+		
+		//Step 7 - Dependency injection of objects
+		System.out.println(triangleC.getPointA());
+		System.out.println(triangleC.getPointB());
+		System.out.println(triangleC.getPointC());
+	}
+}

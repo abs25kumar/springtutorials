@@ -1,0 +1,15 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- Step2 Add a dependency -->
+   <bean id = "triangle" class = "com.tutorials.session1.Triangle">
+   		<!-- Step 4 Configure Properties of an object 
+   		<property name="type" value="Equilateral"></property>-->
+   		<!--  Step 5 Configure using Constructor Arguments -->
+   		<constructor-arg value="Isoceles"/>
+   		<constructor-arg value="15" type="int"/>
+   </bean>
+
+</beans>

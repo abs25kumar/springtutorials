@@ -1,0 +1,66 @@
+package com.tutorials.session2;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Triangle  
+		implements Shape {
+	
+	
+	private Point pointA= null;
+	private Point pointB = null;
+	private Point pointC = null;
+	
+	
+	public Triangle() {
+		super();
+	}
+	
+	public Point getPointA() {
+		return pointA;
+	}
+	
+	@Required
+	@Autowired
+	@Qualifier("zeropoint")
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
+	}
+	public Point getPointB() {
+		return pointB;
+	}
+	
+	//Step 16 - Add Required anotations
+	@Required
+	@Required
+	@Autowired
+	@Qualifier("twopoint")
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+	
+	@Required
+	public Point getPointC() {
+		return pointC;
+	}
+	
+	@Required
+	@Autowired
+	@Qualifier("onepoint")
+	public void setPointC(Point pointc) {
+		this.pointC = pointc;
+	}
+	
+	
+	public void draw() {
+		System.out.println("Triangle:");
+		System.out.println("Point A:"+pointA);
+		System.out.println("Point B:"+pointB);
+		System.out.println("Point C:"+pointC);
+		
+	}
+	
+}

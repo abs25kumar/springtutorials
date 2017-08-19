@@ -1,0 +1,52 @@
+package com.tutorials.session2;
+
+import org.springframework.beans.factory.annotation.Required;
+
+public class Triangle  
+		implements Shape {
+	
+	
+	private Point pointA= null;
+	private Point pointB = null;
+	private Point pointC = null;
+	
+	
+	public Triangle() {
+		super();
+	}
+	
+	public Point getPointA() {
+		return pointA;
+	}
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
+	}
+	public Point getPointB() {
+		return pointB;
+	}
+	
+	@Required
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+	
+	@Required
+	public Point getPointC() {
+		return pointC;
+	}
+	
+	@Required
+	public void setPointC(Point pointc) {
+		this.pointC = pointc;
+	}
+	
+	
+	public void draw() {
+		System.out.println("Triangle:");
+		System.out.println("Point A:"+pointA);
+		System.out.println("Point B:"+pointB);
+		System.out.println("Point C:"+pointC);
+		
+	}
+	
+}

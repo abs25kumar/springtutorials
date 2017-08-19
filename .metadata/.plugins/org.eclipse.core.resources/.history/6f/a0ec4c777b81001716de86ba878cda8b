@@ -1,0 +1,26 @@
+package com.tutorials.session1;
+
+public class Triangle {
+	
+	//Step 4- Add a property and configure it using setter injection
+	public String type = null;
+	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	public void draw() {
+		System.out.println("Draw a triangle");
+	}
+
+	//Step 5 - Add constructor for constructor injection
+	public Triangle(String type) {
+		super();
+		this.type = type;
+	}
+
+}

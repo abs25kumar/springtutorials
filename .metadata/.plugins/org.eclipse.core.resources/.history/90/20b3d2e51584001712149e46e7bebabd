@@ -1,0 +1,8 @@
+package MvcConfig;
+
+public class javaConfig {
+
+	public static void main(String[] args) {
+        registry.addViewController("/login").setViewName("login");
+	}
+}

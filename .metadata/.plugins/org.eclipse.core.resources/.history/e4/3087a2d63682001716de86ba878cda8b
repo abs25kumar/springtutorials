@@ -1,0 +1,14 @@
+package com.tutorials.session2;
+
+public class Circle 
+	implements Shape {
+	 
+	Point center;
+
+	public void draw() {
+		System.out.println("Circle:");
+		System.out.println("Center:"+center);
+		
+	}
+
+}

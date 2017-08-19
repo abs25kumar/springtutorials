@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="MIXED" key="ResetTargetSelectionDialog.resetType"/>
+	<section name="org.eclipse.egit.ui.internal.dialogs.ResetTargetSelectionDialog.dialogBounds">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|14.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="729" key="DIALOG_HEIGHT"/>
+		<item value="290" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/arunpanayappan/.git">
+			<item value="false"/>
+			<item value="arunpa0206 &lt;mail_arunn@yahoo.com&gt;"/>
+			<item value="Spring Developer Tutorial - AOP Session 1"/>
+			<item value="arunpa0206 &lt;mail_arunn@yahoo.com&gt;"/>
+			<item value="167c9230915b8301e01b4ce1f266fb857cda054d"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="637,362" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

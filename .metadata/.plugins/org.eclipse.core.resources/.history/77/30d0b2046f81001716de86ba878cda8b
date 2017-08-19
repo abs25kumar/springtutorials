@@ -1,0 +1,13 @@
+package com.tutorials.session1;
+
+public class DrawingApp {
+	
+	public static void main(String[] args) {
+		//With out Spring
+		Triangle triangle = new Triangle();
+		triangle.draw();
+	}
+	
+	
+
+}

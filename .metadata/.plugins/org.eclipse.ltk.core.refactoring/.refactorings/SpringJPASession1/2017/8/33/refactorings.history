@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.tutorials&apos; to &apos;SpringCustomerAppSession4/src/main/java&apos;&#x0A;- Original project: &apos;SpringJPASession1&apos;&#x0A;- Destination element: &apos;SpringCustomerAppSession4/src/main/java&apos;&#x0A;- Original element: &apos;SpringJPASession1/src/main/java/com.tutorials&apos;" description="Copy package" destination="=SpringCustomerAppSession4/src\/main\/java" element1="/src\/main\/java&lt;com.tutorials" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1503033497473" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+package com.tutorials.session2;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+import com.tutorials.session1.Triangle;
+
+public class DrawingApp {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext appContext =
+				new ClassPathXmlApplicationContext("beans.xml");
+		Triangle triangleC =
+				(Triangle) appContext.getBean("triangle");
+		triangleC.draw();
+		
+		
+		System.out.println("Demo of constructor arguments");
+		System.out.println(triangleC.getType());
+		System.out.println(triangleC.getHieght());
+	}
+	
+	
+
+}

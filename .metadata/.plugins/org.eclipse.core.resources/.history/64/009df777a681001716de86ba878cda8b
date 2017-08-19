@@ -1,0 +1,47 @@
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/sprong-beans-3.0.dtd">
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+   <bean id = "zeropoint" class = "com.tutorials.session2.Point">
+   		<property name="x" value="0"/>
+   		<property name="y" value="0"/>
+   	</bean>
+   	<!-- Srwp 8 Make this an inner bean-->
+   	<bean id = "onepoint" class = "com.tutorials.session2.Point">
+   		<property name="x" value="1"/>
+   		<property name="y" value="1"/>
+   	</bean>
+   	<bean id = "twopoint" class = "com.tutorials.session2.Point">
+   		<property name="x" value="2"/>
+   		<property name="y" value="2"/>
+   	</bean>
+   	<list ></list>
+   	
+   <bean id = "triangle" class = "com.tutorials.session2.Triangle">
+   		<constructor-arg value="Isoceles"/>
+   		<constructor-arg value="15" type="int"/>
+   		<property name="pointA" ref="zeropoint"/>
+   		<property name="pointB">
+   			<bean class = "com.tutorials.session2.Point">
+   				<property name="x" value="1"/>
+   				<property name="y" value="1"/>
+   			</bean>
+   		</property>
+   		<property name="pointC" ref="twopoint"/>
+   		
+   		<!-- Step 10 Inject Collections -->
+		<property name="points">
+   			<list>
+    				<ref bean="zeropoint"/>
+    				<ref bean="onepoint"/>
+    				<ref bean="twopoint"/>
+			</list>	
+   		</property>
+   	</bean>
+   	
+   	<!-- Step 9 - Aliasing a bean -->
+   	<alias name="triangle" alias="triangle-alias"/>
+    
+</beans>

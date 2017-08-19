@@ -1,0 +1,35 @@
+package com.tutorials;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.tutorials.data.Customer;
+import com.tutorials.data.CustomerRepository;
+
+
+
+@Controller
+public class CustomerController {
+
+	@Autowired
+	private CustomerRepository repository = null;
+	
+    @GetMapping("/customer")
+    public String customerForm(Model model) {
+    	
+        model.addAttribute("customer", repository.findOne(1L));
+        return "result";
+    }
+    
+
+    
+    
+
+}

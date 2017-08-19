@@ -1,0 +1,27 @@
+package com.tutorials.session2;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DrawingApp{
+	
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext appContext =
+				new ClassPathXmlApplicationContext("beans.xml");
+		appContext.registerShutdownHook();
+		
+		
+		Triangle triangleC =
+				(Triangle) appContext.getBean("triangle-alias");//Step 9
+		
+		System.out.println(triangleC.getPointA());
+		System.out.println(triangleC.getPointB());
+		System.out.println(triangleC.getPointC());
+		
+		triangleC.draw();
+	
+	}
+
+	
+}
