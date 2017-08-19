@@ -1,0 +1,8 @@
+com/tutorials/order/ApplicationConfig$JerseyConfig.class
+com/tutorials/order/rest/Order.class
+com/tutorials/product/rest/Product.class
+com/tutorials/order/Application.class
+com/tutorials/order/rest/OrderRest.class
+com/tutorials/order/ApplicationConfig.class
+com/tutorials/customer/rest/Customer.class
+com/tutorials/order/rest/Price.class
