@@ -2,6 +2,7 @@ package com.tutorials.session2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+//Demo for bean in line
 
 public class DrawingApp{
 	
