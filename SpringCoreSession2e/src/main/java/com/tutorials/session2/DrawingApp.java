@@ -40,6 +40,8 @@ public class DrawingApp{
 		//Step 10 - Dependency injection of list
 		System.out.println("Demo 10 - Drawing list of points from collection:");
 		triangleC.draw();
+		
+		appContext.close();
 	
 	}
 
